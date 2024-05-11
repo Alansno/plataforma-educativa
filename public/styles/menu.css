@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #a8c896;
+    width: 100%;
+    height: 70px;
+}
+
+.btn-user {
+    margin-left: auto;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1px 60px;
+}
+
+.logout {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-2 p {
+    font-size: 20px;
+}
+
+.img-final {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+
+.txt-courses {
+    display: flex;
+}
+
+.txt-courses h3 {
+    margin-left: auto;
+    margin-right: 120px;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 170px;
+}
+
+.courses-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 170px;
+}
+
+.courses-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid;
+    border-color: black;
+    padding: 5px 50px;
+    border-radius: 40px;
+}
+
+.courses-name p {
+    font-size: 20px;
+}
+
+.courses-porcentage p {
+    font-size: 20px;
+}
+
+.course-desc {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.course-img {
+    width: 310px;
+}
+
+.course-img img{
+    display: block;
+    width: 400px;
+    height: 300px;
+}
+
+.btn-quiz {
+    margin-top: 100px;
+    width: 100px;
+    border: none;
+    background-color: blue;
+    border-radius: 16px;
+    padding: 10px 10px;
+    text-align: center;
+    float: right;
+}
+
+.btn-quiz a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.title-question {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.title-answer {
+    font-size: 20px;
+}
+
+.answers {
+   margin-bottom: 20px;
+}
+
+.answers-one {
+    display: flex;
+    gap: 10px;
+}
+
+.ctn-btn {
+    margin-top: 50px;
+    float: right;
+}
+
+.ctn-btn button {
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .txt-courses h3 {
+        margin-right: 0;
+    }
+
+    .courses {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .courses-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 300px;
+        border: 1px solid;
+        border-color: black;
+        padding: 5px 30px;
+        border-radius: 40px;
+    }
+
+    .courses-name p{
+        font-size: 16px;
+    }
+
+    .courses-porcentage p{
+        font-size: 20px;
+    }
+
+    .courses-info {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 170px;
+    }
+
+    .course-desc {
+        font-size: 20px;
+    }
+
+    .answers {
+        margin-bottom: 30px;
+     }
+
+    .title-answer {
+        font-size: 20px;
+    }
+
+    .title-question {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+}

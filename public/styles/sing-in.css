@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a8c896;
+}
+
+.principal-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.form-pla {
+    display: flex;
+    width: 350px;
+    height: 300px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+.form-pla-register {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+.txt-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-ctn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-ctn input {
+    height: 30px;
+}
+
+.btn-sing-in {
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-sing-up {
+    margin: auto;
+    color: black;
+    text-decoration: none;
+}
+
+.msj-validations {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+.msj-validations li {
+    color: white;
+}
+
+.msj-success {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+.msj-success p {
+    color: white;
+}

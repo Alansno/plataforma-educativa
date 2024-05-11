@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="stylesheet" href="{{ secure_asset('styles/sing-in.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/sing-in.css') }}">
     <title>Iniciar sesión</title>
 </head>
 <body>

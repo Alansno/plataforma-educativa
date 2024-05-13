@@ -23,4 +23,9 @@ class QuizController extends Controller
         $userId = Auth::id();
         return $this->quizService->next($request,$userId);
     }
+
+    public function generateCertificate($id) {
+        $user = Auth::user()->name;
+        return $this->quizService->certificate($user,$id);
+    }
 }

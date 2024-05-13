@@ -35,4 +35,6 @@ Route::controller(CourseController::class)->group(function () {
 Route::controller(QuizController::class)->group(function () {
     Route::get('course-questions/{id}', 'showQuestion')->name('course-questions')->middleware('auth');
     Route::post('course-question-next', 'nextQuestion')->name('course-question-next')->middleware('auth');
+    Route::get('pdf-curso/{id}', 'generateCertificate')->name('pdf-curso')->middleware('auth');
 })->middleware('auth');
+

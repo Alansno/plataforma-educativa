@@ -24,6 +24,10 @@
     <p>Tuviste {{$hits->count()}}/{{$userAnswers->count()}} aciertos</p>
         <br>
     <img class="img-final" src="{{ asset('assets/undraw_friendship_mni7.png') }}" alt="">
+
+    <div>
+        <a href="{{ route('pdf-curso', ['id' => $courseId]) }}">Constancia</a>
+    </div>
     
     <div class="btn-quiz">
         <a href="/menu">Volver al inicio</a>

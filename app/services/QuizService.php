@@ -4,6 +4,7 @@ namespace App\Services;
 use App\Models\Course;
 use App\Models\QuestionAnswer;
 use App\Models\UserCourse;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use App\Models\UserAnswer;
@@ -74,11 +75,21 @@ class QuizService {
                 return $value->isCorrect == 1;
             });
 
-            return view('final-course', compact('hits', 'userAnswers'));
+            return view('final-course', compact('hits', 'userAnswers', 'courseId'));
         }
 
         $answers = $question->answers()->get();
 
         return view('course-questions', compact('question', 'answers', 'courseId'));
+    }
+
+    public function certificate($user,$id) {
+        $course = Course::where('id', $id)->select('name_course')->first();
+        $data = [
+            'course' => $course,
+            'user' => $user
+        ];
+        $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('certificate',$data);
+        return $pdf->download('certificado.pdf');
     }
 }

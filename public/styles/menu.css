@@ -4,6 +4,22 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+a {
+    font-family: sans-serif;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -145,6 +161,10 @@ body {
     gap: 10px;
 }
 
+.answers-one label {
+    font-family: sans-serif;
+}
+
 .ctn-btn {
     margin-top: 50px;
     float: right;
@@ -158,6 +178,43 @@ body {
     padding: 15px 15px;
     cursor: pointer;
     font-size: 16px;
+    font-family: sans-serif;
+}
+
+.btn-sections {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.btn-back a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-back {
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif; 
+}
+
+.btn-constancy a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-constancy {
+    background-color: #a8c896;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 @media only screen and (max-width: 992px) {

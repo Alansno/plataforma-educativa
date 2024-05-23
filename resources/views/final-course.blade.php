@@ -25,13 +25,15 @@
         <br>
     <img class="img-final" src="{{ asset('assets/undraw_friendship_mni7.png') }}" alt="">
 
-    <div>
-        <a href="{{ route('pdf-curso', ['id' => $courseId]) }}">Constancia</a>
-    </div>
-    
-    <div class="btn-quiz">
-        <a href="/menu">Volver al inicio</a>
-    </div>
+    <section class="btn-sections">
+        <div class="btn-constancy">
+            <a href="{{ route('pdf-curso', ['id' => $courseId]) }}">Constancia</a>
+        </div>
+        
+        <div class="btn-back">
+            <a href="/menu">Volver al inicio</a>
+        </div>
+    </section>
 
     </main>
 </body>
